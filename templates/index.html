@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>NgolaTube</title>
+  <link rel="stylesheet" href="/static/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>NgolaTube</h1>
+  </header>
+
+  <div class="container">
+    {% for titulo, url in videos %}
+      <div class="video-card">
+        <h3>{{ titulo }}</h3>
+        <iframe src="{{ url }}" allowfullscreen></iframe>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
