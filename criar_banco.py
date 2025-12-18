@@ -1,59 +1,53 @@
-import sqlite3
+from app import db, Video, app
+import sqlite3  # Para backup se necessário
 
-
-conexao = sqlite3.connect('banco.db')
-
-
-cursor = conexao.cursor()
-
-
-cursor.execute('''
-    CREATE TABLE IF NOT EXISTS videos (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        titulo TEXT NOT NULL,
-        url TEXT NOT NULL,
-        descricao TEXT,
-        categoria TEXT,
-        autor TEXT
-    )
-''')
-
-# Adicionar colunas se não existirem (para tabelas existentes)
-try:
-    cursor.execute("ALTER TABLE videos ADD COLUMN descricao TEXT")
-except sqlite3.OperationalError:
-    pass  # Coluna já existe
-try:
-    cursor.execute("ALTER TABLE videos ADD COLUMN categoria TEXT")
-except sqlite3.OperationalError:
-    pass
-try:
-    cursor.execute("ALTER TABLE videos ADD COLUMN autor TEXT")
-except sqlite3.OperationalError:
-    pass
-
-
-
-
-
-cursor.execute("INSERT INTO videos (titulo, url, descricao, categoria, autor) VALUES ('[FREE] CBG x Wizy x Kelson Most Wanted Type Beat IMPÉRIO (Prod.Steam Blood)', 'https://www.youtube.com/embed/X-w2i0aqIzU', 'Beat instrumental angolano para rappers.', 'Música', 'Steam Blood')")
-
-
-cursor.execute("INSERT INTO videos (titulo, url, descricao, categoria, autor) VALUES ('Standard Bank de Angola | Proposta de Valor Oil & Gas', 'https://www.youtube.com/embed/U2bMv-QBGB8', 'Apresentação sobre serviços bancários para o setor de petróleo e gás.', 'Negócios', 'Standard Bank Angola')")
-
-
-
-
-cursor.execute("INSERT INTO videos (titulo, url, descricao, categoria, autor) VALUES ('What really matters at the end of life | BJ Miller | TED', 'https://www.youtube.com/embed/apbSsILLh28?start=7', 'Palestra sobre cuidados paliativos e significado da vida.', 'Educação', 'BJ Miller')")
-
-cursor.execute("INSERT INTO videos (titulo, url, descricao, categoria, autor) VALUES ('O Lince Sabe Quem é O Pai | Shadow Fight 2', 'https://www.youtube.com/embed/yRMt8SoZkZg?start=15', 'Vídeo humorístico de gameplay.', 'Entretenimento', 'Desconhecido')")
-
-cursor.execute("INSERT INTO videos (titulo, url, descricao, categoria, autor) VALUES ('Ela factura milhões com o digital | Dinheiro Limpo Podcast Ep.36', 'https://www.youtube.com/embed/b6nP_Ak4A6k', 'Episódio sobre empreendedorismo digital.', 'Podcast', 'Dinheiro Limpo')")
-
-
-
-conexao.commit()
-conexao.close()
+with app.app_context():
+    db.create_all()
+    
+    # Adicionar vídeos de exemplo se não existirem
+    if Video.query.count() == 0:
+        videos_data = [
+            {
+                'titulo': '[FREE] CBG x Wizy x Kelson Most Wanted Type Beat IMPÉRIO (Prod.Steam Blood)',
+                'url': 'https://www.youtube.com/embed/X-w2i0aqIzU',
+                'descricao': 'Beat instrumental angolano para rappers.',
+                'categoria': 'Música',
+                'autor': 'Steam Blood'
+            },
+            {
+                'titulo': 'Standard Bank de Angola | Proposta de Valor Oil & Gas',
+                'url': 'https://www.youtube.com/embed/U2bMv-QBGB8',
+                'descricao': 'Apresentação sobre serviços bancários para o setor de petróleo e gás.',
+                'categoria': 'Negócios',
+                'autor': 'Standard Bank Angola'
+            },
+            {
+                'titulo': 'What really matters at the end of life | BJ Miller | TED',
+                'url': 'https://www.youtube.com/embed/apbSsILLh28?start=7',
+                'descricao': 'Palestra sobre cuidados paliativos e significado da vida.',
+                'categoria': 'Educação',
+                'autor': 'BJ Miller'
+            },
+            {
+                'titulo': 'O Lince Sabe Quem é O Pai | Shadow Fight 2',
+                'url': 'https://www.youtube.com/embed/yRMt8SoZkZg?start=15',
+                'descricao': 'Vídeo humorístico de gameplay.',
+                'categoria': 'Entretenimento',
+                'autor': 'Desconhecido'
+            },
+            {
+                'titulo': 'Ela factura milhões com o digital | Dinheiro Limpo Podcast Ep.36',
+                'url': 'https://www.youtube.com/embed/b6nP_Ak4A6k',
+                'descricao': 'Episódio sobre empreendedorismo digital.',
+                'categoria': 'Podcast',
+                'autor': 'Dinheiro Limpo'
+            }
+        ]
+        
+        for data in videos_data:
+            video = Video(**data)
+            db.session.add(video)
+        
+        db.session.commit()
 
 print("Banco de dados criado com sucesso!")
-# 2-5-14-25
