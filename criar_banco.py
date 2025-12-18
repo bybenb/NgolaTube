@@ -22,7 +22,7 @@ cursor.execute('''
 cursor.execute("INSERT INTO videos (titulo, url) VALUES ('[FREE] CBG x Wizy x Kelson Most Wanted Type Beat IMPÉRIO (Prod.Steam Blood)', 'https://www.youtube.com/embed/X-w2i0aqIzU')")
 
 
-cursor.execute("INSERT INTO videos (titulo, url) VALUES ('Título do vídeo aqui', 'https://www.youtube.com/embed/U2bMv-QBGB8')")
+cursor.execute("INSERT INTO videos (titulo, url) VALUES ('Standard Bank de Angola | Proposta de Valor Oil & Gas', 'https://www.youtube.com/embed/U2bMv-QBGB8')")
 
 
 
