@@ -2,21 +2,53 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NgolaTube</title>
   <link rel="stylesheet" href="/static/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>NgolaTube</h1>
+    <div class="nav-container">
+      <h1><i class="fas fa-play-circle"></i> NgolaTube</h1>
+      <nav>
+        <ul>
+          <li><a href="/"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="#"><i class="fas fa-info-circle"></i> Sobre</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <div class="container">
     {% for titulo, url in videos %}
       <div class="video-card">
-        <h3>{{ titulo }}</h3>
+        <h3><i class="fas fa-video"></i> {{ titulo }}</h3>
         <iframe src="{{ url }}" allowfullscreen></iframe>
       </div>
     {% endfor %}
+    
+    <!-- Paginação -->
+    {% if total_pages > 1 %}
+      <div class="pagination">
+        {% if page > 1 %}
+          <a href="?page={{ page - 1 }}"><i class="fas fa-chevron-left"></i> Anterior</a>
+        {% endif %}
+        
+        {% for p in range(1, total_pages + 1) %}
+          {% if p == page %}
+            <span class="current">{{ p }}</span>
+          {% else %}
+            <a href="?page={{ p }}">{{ p }}</a>
+          {% endif %}
+        {% endfor %}
+        
+        {% if page < total_pages %}
+          <a href="?page={{ page + 1 }}">Próximo <i class="fas fa-chevron-right"></i></a>
+        {% endif %}
+      </div>
+    {% endif %}
   </div>
 </body>
 </html>
