@@ -33,7 +33,21 @@ with app.app_context():
                 'url': 'https://www.youtube.com/embed/yRMt8SoZkZg?start=15',
                 'descricao': 'Vídeo humorístico de gameplay.',
                 'categoria': 'Entretenimento',
-                'autor': 'Desconhecido'
+                'autor': 'BrancoPlayer'
+            },
+            {
+                'titulo': 'Lucas A.R.T. - ASTA',
+                'url': 'https://www.youtube.com/embed/-dkNV505w5A',
+                'descricao': 'Maior Canal de Rap Nerd do Brasil.',
+                'categoria': 'Música',
+                'autor': '7Minutoz'
+            },
+            {
+                'titulo': 'Duolingo Anime',
+                'url': 'https://www.youtube.com/embed/tlotyLGia5I?start=15',
+                'descricao': 'Maior escola de Idiomas Online.',
+                'categoria': 'Educação',
+                'autor': 'DUOLINGO'
             },
             {
                 'titulo': 'Ela factura milhões com o digital | Dinheiro Limpo Podcast Ep.36',
