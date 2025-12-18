@@ -55,6 +55,90 @@ with app.app_context():
                 'descricao': 'Episódio sobre empreendedorismo digital.',
                 'categoria': 'Podcast',
                 'autor': 'Dinheiro Limpo'
+            },
+            {
+                'titulo': 'Como Fazer um Site Profissional | HTML, CSS e JavaScript',
+                'url': 'https://www.youtube.com/embed/Ejkb_YpuHWs',
+                'descricao': 'Tutorial completo para criar sites responsivos.',
+                'categoria': 'Educação',
+                'autor': 'Curso em Vídeo'
+            },
+            {
+                'titulo': 'Top 10 Jogos de 2023 | Análise Completa',
+                'url': 'https://www.youtube.com/embed/8aGhZQkoFbQ',
+                'descricao': 'Revisão dos melhores jogos lançados no ano.',
+                'categoria': 'Entretenimento',
+                'autor': 'IGN'
+            },
+            {
+                'titulo': 'Receita de Feijoada Completa | Passo a Passo',
+                'url': 'https://www.youtube.com/embed/4Jv9xZ9w9zA',
+                'descricao': 'Aprenda a fazer a tradicional feijoada brasileira.',
+                'categoria': 'Culinária',
+                'autor': 'Panelinha'
+            },
+            {
+                'titulo': 'História da Música Angolana | Documentário',
+                'url': 'https://www.youtube.com/embed/5xZvK9z9z9z',
+                'descricao': 'Exploração da evolução da música em Angola.',
+                'categoria': 'Documentário',
+                'autor': 'TPA'
+            },
+            {
+                'titulo': 'Como Investir em Ações | Guia para Iniciantes',
+                'url': 'https://www.youtube.com/embed/6yZwK9z9z9z',
+                'descricao': 'Introdução ao mercado de ações e investimentos.',
+                'categoria': 'Finanças',
+                'autor': 'Warren Buffett Academy'
+            },
+            {
+                'titulo': 'Viagem a Luanda | Turismo em Angola',
+                'url': 'https://www.youtube.com/embed/7zZwK9z9z9z',
+                'descricao': 'Descubra os pontos turísticos de Luanda.',
+                'categoria': 'Turismo',
+                'autor': 'Visit Angola'
+            },
+            {
+                'titulo': 'Kizomba Moderna | Aula de Dança',
+                'url': 'https://www.youtube.com/embed/8aZwK9z9z9z',
+                'descricao': 'Aprenda passos básicos de kizomba.',
+                'categoria': 'Dança',
+                'autor': 'Kizomba School'
+            },
+            {
+                'titulo': 'Inteligência Artificial no Futuro | Palestra',
+                'url': 'https://www.youtube.com/embed/9bZwK9z9z9z',
+                'descricao': 'Discussão sobre o impacto da IA na sociedade.',
+                'categoria': 'Tecnologia',
+                'autor': 'MIT Technology Review'
+            },
+            {
+                'titulo': 'Stand-Up Comedy | Humor Angolano',
+                'url': 'https://www.youtube.com/embed/0cZwK9z9z9z',
+                'descricao': 'Show de comédia stand-up com artistas locais.',
+                'categoria': 'Comédia',
+                'autor': 'Angola Comedy'
+            },
+            {
+                'titulo': 'Fotografia de Natureza | Dicas Profissionais',
+                'url': 'https://www.youtube.com/embed/1dZwK9z9z9z',
+                'descricao': 'Técnicas para fotografar paisagens naturais.',
+                'categoria': 'Fotografia',
+                'autor': 'National Geographic'
+            },
+            {
+                'titulo': 'Como Criar um Canal no YouTube | Guia Completo',
+                'url': 'https://www.youtube.com/embed/2eZwK9z9z9z',
+                'descricao': 'Passos para iniciar um canal de sucesso.',
+                'categoria': 'YouTube',
+                'autor': 'PewDiePie'
+            },
+            {
+                'titulo': 'Saúde Mental | Como Lidar com o Stress',
+                'url': 'https://www.youtube.com/embed/3fZwK9z9z9z',
+                'descricao': 'Dicas para manter a saúde mental em dia.',
+                'categoria': 'Saúde',
+                'autor': 'Psicologia Hoje'
             }
         ]
         
