@@ -19,13 +19,13 @@ def pagina_principal():
         cursor.execute("SELECT COUNT(*) FROM videos WHERE titulo LIKE ?", ('%' + query + '%',))
         total_videos = cursor.fetchone()[0]
         # Buscar vídeos filtrados
-        cursor.execute("SELECT titulo, url FROM videos WHERE titulo LIKE ? LIMIT ? OFFSET ?", ('%' + query + '%', VIDEOS_PER_PAGE, offset))
+        cursor.execute("SELECT titulo, url, descricao, categoria, autor FROM videos WHERE titulo LIKE ? LIMIT ? OFFSET ?", ('%' + query + '%', VIDEOS_PER_PAGE, offset))
     else:
         # Contar todos
         cursor.execute("SELECT COUNT(*) FROM videos")
         total_videos = cursor.fetchone()[0]
         # Buscar todos
-        cursor.execute("SELECT titulo, url FROM videos LIMIT ? OFFSET ?", (VIDEOS_PER_PAGE, offset))
+        cursor.execute("SELECT titulo, url, descricao, categoria, autor FROM videos LIMIT ? OFFSET ?", (VIDEOS_PER_PAGE, offset))
     
     total_pages = (total_videos + VIDEOS_PER_PAGE - 1) // VIDEOS_PER_PAGE
     lista_videos = cursor.fetchall()

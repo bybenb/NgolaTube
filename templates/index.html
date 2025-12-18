@@ -26,9 +26,18 @@
   </header>
 
   <div class="container">
-    {% for titulo, url in videos %}
+    {% for titulo, url, descricao, categoria, autor in videos %}
       <div class="video-card">
         <h3><i class="fas fa-video"></i> {{ titulo }}</h3>
+        {% if descricao %}
+          <p class="video-description">{{ descricao }}</p>
+        {% endif %}
+        {% if categoria %}
+          <p class="video-meta"><strong>Categoria:</strong> {{ categoria }}</p>
+        {% endif %}
+        {% if autor %}
+          <p class="video-meta"><strong>Autor:</strong> {{ autor }}</p>
+        {% endif %}
         <iframe src="{{ url }}" allowfullscreen></iframe>
       </div>
     {% endfor %}
