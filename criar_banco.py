@@ -94,7 +94,7 @@ with app.app_context():
             {
                 'titulo': 'Watch Blue Lock Episode 1 | Official Portuguese Dub',
                 'url': 'https://www.youtube.com/embed/nDgB6ln16Ko&t=720s',
-                'descricao': 'Conheça um dos +filosofais Animes da atualidade.',
+                'descricao': 'Um dos +filosofais Animes da atualidade.',
                 'categoria': 'Entretenimento',
                 'autor': 'Crunchyroll Brasil'
             },          
