@@ -57,88 +57,74 @@ with app.app_context():
                 'autor': 'Dinheiro Limpo'
             },
             {
-                'titulo': 'Como Fazer um Site Profissional | HTML, CSS e JavaScript',
-                'url': 'https://www.youtube.com/embed/Ejkb_YpuHWs',
-                'descricao': 'Tutorial completo para criar sites responsivos.',
-                'categoria': 'Educação',
-                'autor': 'Curso em Vídeo'
+                'titulo': 'YOUR WAY\'S BETTER (Official Lyric Video)',
+                'url': 'https://www.youtube.com/embed/T1LRsp8qBY0',
+                'descricao': 'OH LORD I NEED YOU NOW MORE THAN EVER!',
+                'categoria': 'Musica',
+                'autor': 'Forrest Frank'
             },
             {
-                'titulo': 'Top 10 Jogos de 2023 | Análise Completa',
-                'url': 'https://www.youtube.com/embed/8aGhZQkoFbQ',
-                'descricao': 'Revisão dos melhores jogos lançados no ano.',
+                'titulo': 'Quantas pessoas a energia nuclear matou? Número de mortes por causa nuclear',
+                'url': 'https://www.youtube.com/embed/EQcDgwhQRig',
+                'descricao': 'Saiba a cada dia algo sobre o Palneta Azul.',
                 'categoria': 'Entretenimento',
-                'autor': 'IGN'
+                'autor': 'Em Poucas Palavras - Kurzgesagt'
             },
             {
-                'titulo': 'Receita de Feijoada Completa | Passo a Passo',
-                'url': 'https://www.youtube.com/embed/4Jv9xZ9w9zA',
-                'descricao': 'Aprenda a fazer a tradicional feijoada brasileira.',
+                'titulo': 'How to Make Perfect Poached Eggs - 3 Ways',
+                'url': 'https://www.youtube.com/embed/pAWduxoCgVk',
+                'descricao': 'Aprenda a fazer Ovos Pochê.',
                 'categoria': 'Culinária',
-                'autor': 'Panelinha'
+                'autor': 'Jamie Oliver'
             },
             {
-                'titulo': 'História da Música Angolana | Documentário',
-                'url': 'https://www.youtube.com/embed/5xZvK9z9z9z',
-                'descricao': 'Exploração da evolução da música em Angola.',
-                'categoria': 'Documentário',
-                'autor': 'TPA'
+                'titulo': 'PROVANDO COMIDAS DA ANGOLA',
+                'url': 'https://www.youtube.com/embed/rN_ig2aGvoY',
+                'descricao': 'Exploração da comida  Angolana.',
+                'categoria': 'Cultura',
+                'autor': 'AchismosTV'
             },
             {
-                'titulo': 'Como Investir em Ações | Guia para Iniciantes',
-                'url': 'https://www.youtube.com/embed/6yZwK9z9z9z',
+                'titulo': 'Dívidas para construir riqueza intergeracional',
+                'url': 'https://www.youtube.com/embed/16AJaAPRjlc',
                 'descricao': 'Introdução ao mercado de ações e investimentos.',
                 'categoria': 'Finanças',
                 'autor': 'Warren Buffett Academy'
             },
             {
-                'titulo': 'Viagem a Luanda | Turismo em Angola',
-                'url': 'https://www.youtube.com/embed/7zZwK9z9z9z',
-                'descricao': 'Descubra os pontos turísticos de Luanda.',
-                'categoria': 'Turismo',
-                'autor': 'Visit Angola'
-            },
+                'titulo': 'Watch Blue Lock Episode 1 | Official Portuguese Dub',
+                'url': 'https://www.youtube.com/embed/nDgB6ln16Ko&t=720s',
+                'descricao': 'Conheça um dos +filosofais Animes da atualidade.',
+                'categoria': 'Entretenimento',
+                'autor': 'Crunchyroll Brasil'
+            },          
             {
-                'titulo': 'Kizomba Moderna | Aula de Dança',
-                'url': 'https://www.youtube.com/embed/8aZwK9z9z9z',
-                'descricao': 'Aprenda passos básicos de kizomba.',
-                'categoria': 'Dança',
-                'autor': 'Kizomba School'
-            },
-            {
-                'titulo': 'Inteligência Artificial no Futuro | Palestra',
-                'url': 'https://www.youtube.com/embed/9bZwK9z9z9z',
-                'descricao': 'Discussão sobre o impacto da IA na sociedade.',
-                'categoria': 'Tecnologia',
-                'autor': 'MIT Technology Review'
-            },
-            {
-                'titulo': 'Stand-Up Comedy | Humor Angolano',
-                'url': 'https://www.youtube.com/embed/0cZwK9z9z9z',
+                'titulo': 'Até o Diabo tinha medo da minha Mãe | Stand-Up Comedy',
+                'url': 'https://www.youtube.com/embed/Ey8MPsQxxX4',
                 'descricao': 'Show de comédia stand-up com artistas locais.',
                 'categoria': 'Comédia',
-                'autor': 'Angola Comedy'
+                'autor': 'Sou Daniel Lopes'
             },
             {
-                'titulo': 'Fotografia de Natureza | Dicas Profissionais',
-                'url': 'https://www.youtube.com/embed/1dZwK9z9z9z',
-                'descricao': 'Técnicas para fotografar paisagens naturais.',
-                'categoria': 'Fotografia',
+                'titulo': 'It Smelled of Death... (Full Episode) | Something Bit Me',
+                'url': 'https://www.youtube.com/embed/vH98XFxys8M',
+                'descricao': 'Explora as histórias reais e peculiares de picadas de insetos, ferroadas e ataques de animais que levaram pessoas ao pronto-socorro por causa de veneno, doenças ou pela força bruta de suas mandíbulas.',
+                'categoria': 'Documentário',
                 'autor': 'National Geographic'
             },
             {
                 'titulo': 'Como Criar um Canal no YouTube | Guia Completo',
-                'url': 'https://www.youtube.com/embed/2eZwK9z9z9z',
+                'url': 'https://www.youtube.com/embed/05FIltf3yqk',
                 'descricao': 'Passos para iniciar um canal de sucesso.',
                 'categoria': 'YouTube',
-                'autor': 'PewDiePie'
+                'autor': 'JOBA'
             },
             {
-                'titulo': 'Saúde Mental | Como Lidar com o Stress',
-                'url': 'https://www.youtube.com/embed/3fZwK9z9z9z',
+                'titulo': 'Como lidar com autocrítica: 6 perguntas para te ajudar',
+                'url': 'https://www.youtube.com/embed/gSeBOGf3Cf4',
                 'descricao': 'Dicas para manter a saúde mental em dia.',
                 'categoria': 'Saúde',
-                'autor': 'Psicologia Hoje'
+                'autor': 'Universo Psicologia'
             }
         ]
         
